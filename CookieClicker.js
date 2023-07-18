@@ -14,12 +14,15 @@ await keyboard.addListener((e, down) => {
   }
 
   if (e.state.toLowerCase() === 'down' && e.name.toLowerCase() === 's') {
-    console.log('start');
+    const startTime = Date.now();
+    let currentTime = Date.now();
+    console.log('start: ', startTime);
     timer = setInterval(() => {
-      robot.mouseClick('left'), 1
+      robot.mouseClick('left')
       clicks = clicks + 1;
-      console.log('click: ', clicks);
-    });
+      currentTime = Date.now();
+      console.log('click: ', clicks, ' clicks/sec: ', (clicks / ((currentTime - startTime) / 1000)));
+    }, 1);
   }
 
   if (e.state.toLowerCase() === 'down' && e.name.toLowerCase() === 'c') {
