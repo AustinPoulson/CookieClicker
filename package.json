@@ -1,0 +1,26 @@
+{
+  "name": "cookieclicker",
+  "version": "1.0.0",
+  "description": "A general purpose auto clicker",
+  "main": "CookieClicker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node CookieClicker.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AustinPoulson/CookieClicker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AustinPoulson/CookieClicker/issues"
+  },
+  "homepage": "https://github.com/AustinPoulson/CookieClicker#readme",
+  "dependencies": {
+    "node-global-key-listener": "^0.1.1",
+    "robotjs": "^0.6.0",
+    "yarn": "^1.22.19"
+  }
+}
